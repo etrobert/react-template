@@ -1,12 +1,13 @@
 import * as React from 'react';
 import './Card.css';
 import { hot } from 'react-hot-loader';
+import User from './User';
 
-function Card(props: { name: string; img: string }) {
+function Card(props: { user: User }) {
   return (
     <div className="Card">
-      <img src={props.img} />
-      <span>{props.name}</span>
+      <img src={props.user.img} />
+      <span>{props.user.name}</span>
     </div>
   );
 }
