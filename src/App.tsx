@@ -26,9 +26,13 @@ function App() {
     };
   };
 
+  const onDelete = (id: number) => {
+    setUsers(users.filter((user) => user.id != id));
+  };
+
   return (
     <div className="App">
-      <CardList users={users} />
+      <CardList users={users} onDelete={onDelete} />
       <button onClick={() => setUsers([...users, newUser()])}>Add</button>
     </div>
   );
