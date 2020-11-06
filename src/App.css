@@ -15,6 +15,16 @@ body,
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 1em;
 
   background: lightpink;
+}
+
+.item {
+  width: 100px;
+  height: 100px;
+  background: lightblue;
+  display: grid;
+  place-items: center;
 }
