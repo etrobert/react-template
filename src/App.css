@@ -28,3 +28,13 @@ body,
   display: grid;
   place-items: center;
 }
+
+.item.exiting {
+  animation: disappear 0.7s;
+}
+
+@keyframes disappear {
+  to {
+    transform: scale(0);
+  }
+}
