@@ -1,3 +1,4 @@
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 const webpack = require('webpack');
 
@@ -23,13 +24,16 @@ module.exports = {
   output: {
     filename: 'bundle.js',
     path: path.resolve(__dirname, 'dist'),
-    publicPath: '/dist',
   },
   devServer: {
-    contentBase: path.join(__dirname, 'public/'),
+    contentBase: path.join(__dirname, 'dist/'),
     port: 3000,
-    publicPath: 'http://localhost:3000/dist',
     hotOnly: true,
   },
-  plugins: [new webpack.HotModuleReplacementPlugin()],
+  plugins: [
+    new HtmlWebpackPlugin({
+      template: 'src/index.html',
+    }),
+    new webpack.HotModuleReplacementPlugin(),
+  ],
 };
