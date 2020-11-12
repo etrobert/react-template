@@ -24,3 +24,4 @@ Base React project with what I like and nothing more.
 - [Feather Icons](https://feathericons.com)
 - [Clean Webpack Plugin](https://www.npmjs.com/package/clean-webpack-plugin)
 - [HTML Webpack Plugin](https://github.com/jantimon/html-webpack-plugin)
+- [PREACT](https://preactjs.com/)
