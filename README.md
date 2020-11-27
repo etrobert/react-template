@@ -25,3 +25,5 @@ Base React project with what I like and nothing more.
 - [Clean Webpack Plugin](https://www.npmjs.com/package/clean-webpack-plugin)
 - [HTML Webpack Plugin](https://github.com/jantimon/html-webpack-plugin)
 - [PREACT](https://preactjs.com/)
+- [Typescript Performance Tips](https://github.com/microsoft/TypeScript/wiki/Performance)
+- [State of JS 2019](https://2019.stateofjs.com)
